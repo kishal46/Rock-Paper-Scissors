@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <label for="player1">Player 1:</label><br>
+    <input type="text" id="player1" placeholder="Enter name"><br>
+    <label for="player2">Player 2:</label><br>
+    <input type="text" id="player2" placeholder="Enter name"><br>
+    <div class="options">
+        <img src="rock.jfif" alt="Rock" class="option" id="rock" onclick="play('rock')">
+        <img src="paper.jfif" alt="Paper" class="option" id="paper" onclick="play('paper')" width="125">
+        <img src="scissor.jfif" alt="Scissors" class="option" id="scissors" onclick="play('scissors')">
+    </div>
+    <div id="result"></div>
+    <div id="score"></div>
+    <table id="gameData" style="display: none;">
+        <thead>
+            <tr>
+                <th>Round</th>
+                <th>Player 1</th>
+                <th>Player 2</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="main.js">
+   
+</script>
+</body>
+</html>
